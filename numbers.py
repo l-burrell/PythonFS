@@ -19,3 +19,9 @@ print(2 ** 3)
 
 # modulo returns the remainder
 print(6 % 4)
+
+# return a binary representation of the number
+print(bin(5))
+
+# convert binary number to base ten
+print(int('0b101', 2))
