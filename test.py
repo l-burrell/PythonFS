@@ -1,9 +1,6 @@
 
-def sayHello(fname, lname):
-    return 'hello ' + fname + " " + lname;
-print(sayHello('john', 'doe'))
+def calcAge(current_year=2021):
+    birth_year = int(input('What is the year you were born? '))
+    return current_year - birth_year
 
-def hidePassword(password):
-    return len(password) * '*';
-password = "hidemypasswordplease"
-print(hidePassword(password))
+print(calcAge())
