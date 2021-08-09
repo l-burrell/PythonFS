@@ -20,3 +20,11 @@ print("items: ",items)
 
 # notice the copy doesn't reference the original
 print("cart: ",cart)
+
+# matrix = nested list
+matrix = [
+    [1,0,1],
+    [0,1,0],
+    [1,0,1]
+]
+print(matrix)
