@@ -1,6 +1,12 @@
+user = {"john":"mypasswordhere"}
 
-def calcAge(current_year=2021):
-    birth_year = int(input('What is the year you were born? '))
-    return current_year - birth_year
+def checkPassword():
+    username = input("enter a username: ")
+    password = input("enter a password: ")
+    if username not in user.keys():
+        return "invalid username"
+    if user[username] == password:
+        return "successfully confirmed user account"
+    return "invalid account credentials"
 
-print(calcAge())
+print(checkPassword())
